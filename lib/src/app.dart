@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' show get;
 import 'models/image_model.dart';
 import 'dart:convert';
-import 'widgets/image_list.dart'
+import 'widgets/image_list.dart';
 
 class App extends StatefulWidget {
   createState() {

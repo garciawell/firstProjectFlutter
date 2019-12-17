@@ -5,4 +5,13 @@ class ImageList extends StatelessWidget {
   final List<ImageModel> images;
 
   ImageList(this.images);
+
+  Widget build(context) {
+    return ListView.builder(
+      itemCount: images.length,
+      itemBuilder: (contenxt, int index) {
+        return Image.network(images[index].url);
+      },
+    );
+  }
 }
